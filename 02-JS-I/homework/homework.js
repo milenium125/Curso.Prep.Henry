@@ -147,10 +147,10 @@ function numeroRandom() {
 
 function esPositivo(numero) {
   if (numero<0){
-    return 'Numero Negativo'
+    return 'Es negativo'
   }
   else if (numero>0){
-    return'el numero es positivo'
+    return 'Es positivo'
   }
   else{
     return false
@@ -163,12 +163,12 @@ function agregarSimboloExclamacion(str) {
 }
 
 function combinarNombres(nombre, apellido) {
-  return nombre + "" + apellido;
+  return nombre + " " + apellido;
   
 }
 
 function obtenerSaludo(nombre) {
-  return'Hola' + nombre;
+  return'Hola '+nombre+'!';
   
 }
 
@@ -198,26 +198,27 @@ function deEuroAdolar(euro){
 
 function esVocal(letra){
   if (letra.length == 1){
-    if (letra==a){
-      return 'es vocal';
+    if (letra === 'a'){
+      return 'Es vocal'
     }
-    else if (letra==e){
-      return 'es vocal';
+    else if (letra === 'e'){
+      return 'Es vocal'
     }
-    else if (letra==i){
-      return 'es vocal';
+    else if (letra === 'i'){
+      return 'Es vocal'
     }
-    else if (letra==o){
-      return 'es vocal';
+    else if (letra === 'o'){
+      return 'Es vocal'
     }
-    else if (letra==u){
-      return 'es vocal';
+    else if (letra === 'u'){
+      return 'Es vocal'
     }
-    else if(letra.length >1)
+    else{
       return 'Dato incorrecto'
-  else {
-    return'Dato incorrecto';
+    }
   }
+  else {
+    return 'Dato incorrecto'
   }
 }
 
