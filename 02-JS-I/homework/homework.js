@@ -30,13 +30,13 @@ function devolverString(str) {
   
 }
 
-function sumar(x, y) {
+function suma(x, y) {
   return x + y;
   
 }
 
 function resta(x, y) {
-  return x + y;
+  return x - y;
   
 }
 
@@ -138,16 +138,19 @@ function redondearHaciaArriba(num) {
 }
 
 function numeroRandom() {
-  return Math.random;
+  random = Math.random();
+  if (0 <= random <= 1){
+    return random
+  }
   
 }
 
 function esPositivo(numero) {
   if (numero<0){
-    console.log('Numero Negativo')
+    return 'Numero Negativo'
   }
   else if (numero>0){
-    console.log('el numero es positivo')
+    return'el numero es positivo'
   }
   else{
     return false
@@ -156,16 +159,16 @@ function esPositivo(numero) {
 }
 
 function agregarSimboloExclamacion(str) {
-  console.log (str + "!");
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
-  console.log(nombre + "" + apellido);
+  return nombre + "" + apellido;
   
 }
 
 function obtenerSaludo(nombre) {
-  console.log('Hola' + nombre);
+  return'Hola' + nombre;
   
 }
 
@@ -196,26 +199,25 @@ function deEuroAdolar(euro){
 function esVocal(letra){
   if (letra.length == 1){
     if (letra==a){
-      return true;
+      return 'es vocal';
     }
     else if (letra==e){
-      return true;
+      return 'es vocal';
     }
     else if (letra==i){
-      return true;
+      return 'es vocal';
     }
     else if (letra==o){
-      return true;
+      return 'es vocal';
     }
     else if (letra==u){
-      return true;
+      return 'es vocal';
     }
-    else{
-      console.log('Dato incorrecto');
-    }
-    
-    console.log('Dato incorrecto');
-  
+    else if(letra.length >1)
+      return 'Dato incorrecto'
+  else {
+    return'Dato incorrecto';
+  }
   }
 }
 
@@ -236,7 +238,7 @@ module.exports = {
   sonIguales,
   menosQueNoventa,
   mayorQueCincuenta,
-  sumar,
+  suma,
   resta,
   divide,
   multiplica,
