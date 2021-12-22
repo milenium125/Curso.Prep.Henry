@@ -213,9 +213,9 @@ function esVocal(letra){
     else{
       console.log('Dato incorrecto');
     }
-  else{
+    
     console.log('Dato incorrecto');
-  }
+  
   }
 }
 
