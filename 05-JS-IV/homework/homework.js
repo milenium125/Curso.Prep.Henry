@@ -70,11 +70,11 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
   
-  if (usuario.email === null || usuario.email === undefined || usuario.email === 0 || usuario.email === ""){
-    return false
+  if (Boolean(usuario.email)){
+    return true
   }
   else{
-    return true
+    return false
   }
 }
 
